@@ -1,0 +1,418 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                   /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                   /* размер шрифта всем одинаковый */
+}
+a {                    /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {				   /* устраняем отступы между ячейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;		/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 			  		/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы для текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+a, a:visited { 
+	color: #e6618c;
+	text-decoration: underline;
+}
+a:hover {
+	color: #fdf208;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #c83867;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+	max-width:100%;
+}
+/* --------------- /базовые настройки ---------*/
+
+/*---------------- оснсвной css ---------------*/
+
+body{
+	background-color: #fff;
+	width: 100%;
+	margin: 0;
+	bottom: 0;
+	color: #747173;	
+	font-family: Arial, Sans-serif;
+	font-size: 22px;
+	text-align: left;
+}
+
+.head{         /*---логотип---*/
+	height: 126px;
+}
+.logo{
+	float: right;
+	margin: 39px 35px 0 0;
+}
+
+.intro {       /*---хедлайн---*/
+	background: #292f3b;
+	height: 532px;
+}
+
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.frame {
+	height: 10px;
+	position: relative;
+}
+
+.intro .decor {
+	position: absolute;
+	top: -115px;
+	left: 0;
+	width: 390px;
+	height: 788px;
+	background: url('../images/intro-decor.png');
+}
+.banner-wrapper {  /*--- основной заголовок ---*/
+	max-width: 900px;
+	margin: 0 auto;
+}
+.space{
+	height: 285px;
+	width: 377px;
+	float: left;
+}
+.headline {
+	position: relative;
+	padding: 60px 10px;
+}
+.headline h2{
+	font-size: 42px;
+	font-weight: 500;
+	word-spacing: -3px;
+
+}
+.headline h1, .business h1 {
+	font-size: 57px;
+	font-weight: 900;
+	letter-spacing: 0.1px;
+	line-height: 73px;
+}
+.text-yellow{
+	color: #fcc100; 
+}
+.main{           /*--- параграф ---*/
+	font-weight: normal;
+	text-align: center;
+	height: 160px;
+}
+.main p{
+	padding: 12px 80px;
+}
+.contact{         /*--- футер ---*/
+	min-height: 67px;
+	background-color: #292f3b;
+	font-size: 10px;
+	font-weight: 500;
+	color: #939598;
+}
+.cont-container{
+	max-width: 800px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+	padding: 16px 155px 0 155px;
+}
+.phone, address, .web{
+	padding: 0px 35px;
+}
+.phone{
+	background-image: url(../images/phone.png);
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+}
+address{
+	background-image: url(../images/address.png);
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	font-style: normal;
+}
+.web{
+	background-image: url(../images/web.png);
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+}
+
+/*---------------- /оснсвной css ---------------*/
+
+/*---------------- page-2 css ------------------*/
+.line {       
+	background: #292f3b;
+	height: 235px;
+}
+.business {
+	position: absolute;
+	top: 47px;
+	left: 29px;
+	color: #fff;
+}
+.business h2{
+	font-size: 33px;
+	font-weight: 500;
+}
+.line .decor-2 {
+	position: absolute;
+	top: -113px;
+	right: 125px;
+	width: 490px;
+	height: 384px;
+	background: url('../images/decor-2.png');
+}
+.distr{        /*---   стр.2   ---*/
+	height: 810px;	
+}
+.title{
+	position: relative;
+	padding: 94px 0 5px 30px;
+	word-spacing: -2px;
+	letter-spacing: -1px;
+}
+.title h1{
+	font-size: 40px;	
+	font-weight: bold;
+
+}
+.paragraph{ 
+	line-height: 26px;
+	word-spacing: 2px;
+	letter-spacing: -1px;
+}
+.paragraph p{
+	padding: 20px 55px 9px 30px;
+}
+.picture{
+	padding: 80px 0 0 30px;
+}
+.picture .grey{        /*--- картинка ---*/
+	float: left;
+	margin: 0 32px 0 0;
+}
+.picture p{
+	padding: 48px 30px;
+}
+
+/*---------------- page-2 css -----------------*/
+
+/*---------------- Adaptation -----------------*/
+@media screen and (max-width: 1100px){
+	.wrapper {
+		max-width: 800px;
+	}
+}
+@media screen and (max-width: 790px){
+	.intro {  
+		height: 372px;
+	}
+	.wrapper {
+		max-width: 700px;
+	}
+	.line{
+		height: 190px;
+	}
+	.intro .decor{
+		background-size: 100% auto;
+		width: 273px;
+		height: 551px;
+		top: -80px;
+	}
+	.line .decor-2 {
+		background-size: 100% auto;
+		width: 397px;
+		height: 311px;
+		top: -92px;
+		right: 145px;
+	}
+	.space{
+		width: 370px;
+		height: 180px;
+	}
+	.headline{
+		padding: 40px 10px;
+	}
+	.headline h2{
+		font-size: 36px;
+	}
+	.headline  h1{
+		font-size: 44px;
+		line-height: 57px;
+	}
+	.business h2{
+		top: 35px;
+		left: 20px;
+		font-size: 26px;
+	}
+	.cont-container{
+		padding: 16px 20px 0 50px;
+	}
+	.title{
+		padding-top: 70px;
+	}
+	.title  h1{
+		font-size: 36px;
+	}
+	p{
+		font-size: 20px;
+	}
+	.picture{
+	padding-top: 55px;
+	}
+}
+@media screen and (max-width: 700px){
+	.wrapper {
+		max-width: 600px;
+	}
+	.logo{
+		width: 148px;
+		height: 30px;
+		margin: 30px 20px 0 0;	
+	}
+	.head{
+		height: 100px;
+	}
+	.space{
+		width: 320px;
+	}
+	.line .decor-2 {
+		right: 85px;
+	}
+}             
+@media screen and (max-width: 655px){
+	.space{
+		width: 300px;
+	}
+	.headline{
+		padding: 30px 10px;
+	}
+	.headline h2{
+		font-size: 31px;
+	}
+	.headline h1 {
+		font-size: 36px;
+		line-height: 45px;
+	}	
+	.business h2{
+		top: 47px;
+		font-size: 25px;
+	}
+	.picture p{
+	padding-top: 20px;
+}
+}
+@media screen and (max-width: 590px){
+	.logo{
+		width: 132px;
+		height: 25px;
+		margin: 23px 18px 0 0;	
+	}
+	.head{
+		height: 76px;
+	}
+	.intro {  
+		height: 319px;
+	}
+	.wrapper {
+		max-width: 500px;
+	}
+	.intro .decor{
+		width: 234px;
+		height: 472.5px;
+		top: -69px;
+	}
+	.space{
+		width: 224px;
+		height: 160px;
+	}
+	.line{
+		height: 164px;
+	}
+	.line .decor-2 {
+		width: 342px;
+		height: 268px;
+		top: -79px;
+		right: 30px;
+	}
+	.main{
+		height: 114px;
+	}
+	p{
+		font-size: 18px;
+		padding-top: 0;
+	}
+	.title{
+		padding-top: 60px;
+	}
+	.title  h1{
+		font-size: 30px;
+	}
+	.contact{        
+		font-size: 8px;
+		min-height: 57px;
+	}
+	.cont-container{
+		padding: 16px 0 0 20px;
+	}
+	.phone, address, .web{
+		padding: 0px 10px 5px 30px;
+	}
+	.grey img{
+		width: 170px;
+		height: 150px;
+	}
+}
